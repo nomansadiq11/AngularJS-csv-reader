@@ -18,13 +18,13 @@ $(function() {
         showBorders: true,
         dataSource: {
             store: {
-                type: "odata",
+                type: "json",
                 fieldTypes: {
                     "Product_Cost": "Decimal",
                     "Product_Sale_Price": "Decimal",
                     "Product_Retail_Price": "Decimal"
                 },
-                url: "https://js.devexpress.com/Demos/DevAV/odata/Products"
+                url: "master.csv"
             },
             select: [
                 "Product_ID",
